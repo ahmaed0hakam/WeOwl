@@ -1,0 +1,545 @@
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5b170;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+input {
+  font-family: Roboto, sans-serif !important;
+}
+
+body {
+  color: #fff;
+}
+.section {
+  position: relative;
+  width: 100%;
+  height: 721.6px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.teachers {
+  background-color: #ebedef;
+}
+.welcome {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.title {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+}
+.table-scroll {
+  position: relative;
+  height: 350px;
+  overflow: auto;
+  margin-top: 20px;
+  width: 80vw;
+  background-color: #ab2a19;
+  border: solid #ab2a19;
+  
+}
+table {
+  width: 100%;
+  font-family: sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+thead {
+  background-color: #ab2a19;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+}
+th,
+td {
+  padding: 12px 15px;
+}
+td button, .actions input,
+section button,
+td form input{
+  min-width: 100px;
+  
+  background-color: #eed86e;
+  color: #ab2a19;
+  border-radius: 3px;
+  padding: 2px;
+}
+.actions input
+{
+  border-color: #fff;
+}
+.actions {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.actions form {
+  padding: 5px;
+}
+tr th {
+  width: 100%;
+}
+#add-sc-btn{
+  width: 100%;
+  }
+td button:hover,
+section button:hover,
+.buttons-scroll button:hover,
+button a:hover,
+td form input:hover{
+  background-color: #ab2a19;
+  color: #eed86e;
+  transition: 0.25s;
+}
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+tbody tr{
+  background-color: #fff;
+}
+
+tbody tr:last-child {
+  border-bottom: 2px solid #0d121b;
+}
+
+.students {
+  background-color: #fff;
+}
+.classes {
+  background-color: #fff;
+}
+td a {
+  text-decoration: none;
+  color: #0d121b;
+}
+td a:hover {
+  font-weight: bold;
+  color: #ab2a19;
+}
+.add-user {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  width: 200px;
+}
+
+.add-teacher,
+.edit-teacher {
+  background-color: #ebedef;
+}
+.add-student,
+.edit-student {
+  background-color: #fff;
+}
+article {
+  background-color: #ab2a19;
+  width: 50%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: #ffffe8 dotted 3px;
+  height: fit-content;
+
+}
+article form {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+article form label {
+  display: block;
+  padding: 15px 0 0;
+  color: #eed86e;
+}
+article form label span {
+  display: block;
+  line-height: 27px;
+  padding: 0 0 5px;
+}
+article form label input {
+  background: #ffffe8;
+  border: none;
+  color: #375461;
+  display: block;
+  font-family: "latoregular";
+  font-size: 14px;
+  height: 46px;
+  line-height: 46px;
+  padding: 0 5px;
+  border-radius: 5px;
+  width: 460px;
+}
+article form input#send {
+  background: #0d121b;
+  border: none;
+  border-radius: 5px;
+  color: #ffffe8;
+  cursor: pointer;
+  font-family: cursive;
+  font-size: 14px;
+  float: right;
+  height: 30px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  width: 70px;
+  align-self: flex-start;
+  transition: 1s;
+}
+article form input#send:hover {
+  width: 460px;
+  transition: 1s;
+}
+button a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.buttons-scroll a button {
+  margin-bottom: 5px;
+  width: 100%;
+  height: 50px;
+  border-color: #ab2a19;
+  background-color: #eed86e;
+  color: #ab2a19;
+  border-radius: 10px;
+}
+.buttons-scroll {
+  padding: 10px;
+  height: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 20px;
+  width: 80vw;
+  background-color: #ab2a19;
+  border: solid #ab2a19;
+}
+.buttons-scroll {
+  background-color: transparent;
+}
+/* For password changing page */
+.pass-article {
+  width: 30%;
+  height: 500px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: #ffffe8 dotted 3px;
+}
+.profile-article {
+  width: 90%;
+  height: 500px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  border: #ffffe8 dotted 3px;
+}
+.profile-article .table-scroll {
+  width: 50%;
+ border: solid #f5b170;
+ height: auto;
+ max-height: 350px;
+
+}
+.form-title {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+.profile-article .teacher-details {
+  height: 350px;
+  margin: 0 !important;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+#delete-teacher {
+  width: auto;
+}
+.pass-article form  {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.pass-article form label {
+  display: block;
+  padding: 15px 0 0;
+}
+.pass-article form label span {
+  display: block;
+  line-height: 27px;
+  padding: 0 0 5px;
+}
+.pass-article form label {
+  width: 100%;
+}
+.pass-article form label input {
+  background: #ffffe8;
+  border: none;
+  color: #375461;
+  display: block;
+  font-family: "latoregular";
+  font-size: 14px;
+  height: 46px;
+  line-height: 46px;
+  padding: 0 5px;
+  border-radius: 5px;
+  width: 100%;
+}
+.pass-article form input#save, .profile-article form input#save, .profile-article .teacher-details form input#delete-btn {
+  background: #0d121b;
+  border: none;
+  border-radius: 5px;
+  color: #ffffe8;
+  cursor: pointer;
+  font-family: cursive;
+  font-size: 14px;
+  float: right;
+  height: 30px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  width: 100%;
+  align-self: flex-start;
+  transition: 1s;
+}
+.pass-article form input#save:hover {
+  width: 100%;
+  transition: 1s;
+}
+/* Modal */
+body.modal-open {
+  overflow: hidden;
+}
+
+#modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  pointer-events: auto;
+}
+
+#modal-dialog {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  text-align: center;
+}
+
+#modal-actions {
+  margin-top: 20px;
+}
+
+#modal-cancel,
+#modal-confirm {
+  margin-right: 10px;
+}
+
+.modal-overlay-hidden {
+  pointer-events: none;
+}
+/* Footer */
+footer {
+  padding: 30px;
+  width: 100%;
+  height: 64.4px;
+  background-color: #212529;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .email a {
+  text-decoration: none;
+  color: #f5b170;
+
+}
+footer .email a p {
+  display: inline;
+}
+.email a:hover,
+.title-fr a:hover {
+  color: #f5b170;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.cr {
+  color: #fff;
+}
+/* ADD */
+#add-teacher, #add-student {
+  height: fit-content;
+position: relative;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 90px;
+}
+
+.notification {
+  position: relative;
+}
+
+.notification .badge {
+
+  background-color: #fa3e3e; 
+  padding: 5px 5px;
+  font-size: 10px;
+  position: absolute; /* Position the badge within the relatively positioned button */
+  top: 27px;
+  left: 25px;
+  border-radius: 50%;
+}
+
+.notification .notification-popup {
+  display: none;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 400px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+/* Style for the modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  z-index: 9999; /* Ensure it appears on top of other elements */
+  left: 10px;
+  top: 10px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scrolling if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+/* Style for the modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Adjust the width as desired */
+  height: 9; /* The height will be calculated dynamically using JavaScript */
+  position: relative;
+}
+
+/* Style for the close button */
+.close {
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* sub-topoics-nav */
+.sub-topoics-nav {
+  width: 100%;
+  height:30px;
+  background:gray;
+  padding-left: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+.sub-topoics {
+  text-decoration: none;
+  color: #ebedef;
+}
+.sub-topoics:hover {
+  color: #ab2a19;
+}
+[class="navbar-nav ms-auto"] {
+  align-items: center;
+}
+.form-control{
+  min-width: 120px !important;
+}
+.warn {
+  margin: 10px 0;
+  color: #fff;
+}
+.to-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.notification .badge {
+  display: none;
+  background-color: #fa3e3e; 
+  padding: 5px 5px;
+  font-size: 10px;
+  position: absolute; /* Position the badge within the relatively positioned button */
+  top: 27px;
+  left: 25px;
+  border-radius: 50%;
+}
+
+
+.notification .notification-popup {
+  display: none;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 400px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
