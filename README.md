@@ -1,6 +1,6 @@
 # WeOwl Laravel Project
 
-A school management system built with Laravel that matches the design and functionality of the original WeOwl project.
+A school management system built with Laravel that id designed for parents to follow up with their children’s information at school.
 
 ## Features
 
