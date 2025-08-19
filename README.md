@@ -1,4 +1,4 @@
-# WeOwl Laravel Project
+# WeOwl Project
 
 A school management system built with Laravel that id designed for parents to follow up with their children’s information at school.
 
@@ -123,29 +123,6 @@ weowl-laravel/
 └── routes/
     └── web.php            # Web routes
 ```
-
-## Features Implemented
-
-- ✅ Landing page with WeOwl design
-- ✅ Manager authentication and dashboard
-- ✅ Parent authentication and dashboard
-- ✅ Teacher authentication and dashboard
-- ✅ Vice Manager authentication and dashboard
-- ✅ Dark theme with Bootstrap 5
-- ✅ Responsive navigation
-- ✅ User-specific headers and layouts
-
-## Next Steps
-
-To complete the full WeOwl functionality, you would need to implement:
-
-- Student management
-- Attendance tracking
-- Grade management
-- Communication features
-- Notification system
-- File uploads
-- Advanced reporting
 
 ## Contributing
 
