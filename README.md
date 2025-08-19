@@ -1,6 +1,6 @@
 # WeOwl Project
 
-A school management system built with Laravel that id designed for parents to follow up with their children’s information at school.
+A school management system built with Laravel that is designed for parents to follow up with their children’s information at school.
 
 ## Features
 
@@ -123,6 +123,7 @@ weowl-laravel/
 └── routes/
     └── web.php            # Web routes
 ```
+
 
 ## Contributing
 
